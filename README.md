@@ -12,12 +12,11 @@ Welcome to the 2025-26 coding assessment for UBC UAS! This exercise will evaluat
 4. Choose the free plan when prompted
 5. Verify your email address
 
-### Step 2: Fork This Repository
+### Step 2: Clone This Repository
 
 1. While logged into GitHub, go to the original assessment repository (link provided separately)
-2. Click the **"Fork"** button in the top right corner of the repository
-3. This creates your own copy of the repository under your GitHub account
-4. You should now see the repository under `https://github.com/YOUR_USERNAME/repository-name`
+2. Copy the repository URL from the green "Code" button
+3. You'll clone this repository directly to work on it locally
 
 ### Step 3: Install GitHub Desktop
 
@@ -35,24 +34,36 @@ GitHub Desktop isn't officially available for Linux, but you can:
 - Use git command line (see alternative instructions below)
 - Or try the unofficial Linux version at [github.com/shiftkey/desktop](https://github.com/shiftkey/desktop)
 
-### Step 4: Clone Your Fork
+### Step 4: Clone the Repository
 
 #### Using GitHub Desktop (Recommended)
 
 1. Open GitHub Desktop
 2. Click "Clone a repository from the Internet"
-3. Select your forked repository from the list
+3. Paste the repository URL you copied earlier
 4. Choose where to save it on your computer (remember this location!)
 5. Click "Clone"
 
 #### Alternative: Using Command Line
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/repository-name.git
+git clone https://github.com/ORIGINAL_REPO_URL/repository-name.git
 cd repository-name
 ```
 
-### Step 5: Install Python
+### Step 5: Make Repository Private and Add Collaborators
+
+1. Go to your cloned repository on GitHub
+2. Click on "Settings" tab
+3. Scroll down to "Danger Zone" and click "Change repository visibility"
+4. Select "Make private" and confirm
+5. Go to "Manage access" in the left sidebar
+6. Click "Invite a collaborator" and add the following users:
+   - ramjayakumar21
+   - maplesyrup-0606
+   - ubcuas
+
+### Step 6: Install Python
 
 #### Windows
 
@@ -81,7 +92,7 @@ sudo apt install python3 python3-pip
 
 Verify with `python3 --version`
 
-### Step 6: Running the Code
+### Step 7: Running the Code
 
 1. Navigate to your cloned repository folder
 2. Open terminal/command prompt in that folder
@@ -130,9 +141,8 @@ Your solution is complete when:
 - [ ] Integration test passes
 - [ ] `show_drone_locations()` uses your helper function
 
-### Example of Good Output
 
-## Step 7: Commit and Push Your Changes
+## Step 8: Commit and Push Your Changes
 
 ### Using GitHub Desktop
 
@@ -152,12 +162,12 @@ git push origin main
 
 ## Submission
 
-When complete, please share the link of your GitHub repository (your forked version) containing your work in the Google Form submission.
+When complete, please share the link of your GitHub repository containing your work in the Google Form submission.
 
 **Your repository link should look like:**
 `https://github.com/YOUR_USERNAME/repository-name`
 
-Make sure your repository is **public** so reviewers can access your code.
+Make sure the repository collaborators (ramjayakumar21, maplesyrup-0606, and ubcuas) have access to review your code.
 
 ### Questions?
 
