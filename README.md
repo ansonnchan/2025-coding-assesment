@@ -61,7 +61,7 @@ cd repository-name
 6. Click "Invite a collaborator" and add the following users:
    - ramjayakumar21
    - maplesyrup-0606
-   - ubcuas
+   - ubc-uas
 
 ### Step 6: Install Python
 
@@ -167,7 +167,7 @@ When complete, please share the link of your GitHub repository containing your w
 **Your repository link should look like:**
 `https://github.com/YOUR_USERNAME/repository-name`
 
-Make sure the repository collaborators (ramjayakumar21, maplesyrup-0606, and ubcuas) have access to review your code.
+Make sure the repository collaborators (ramjayakumar21, maplesyrup-0606, and ubc-uas) have access to review your code.
 
 ### Questions?
 
