@@ -23,6 +23,25 @@ def convert_to_readable_format(coordinate, is_latitude):
     - A string with the readable format
     """
     # Your code here
+    
+   #determining the direction based on whether it's latitude or longitude
+    if is_latitude:
+        if coordinate >= 0:
+            direction = "North"
+        else: 
+            direction = "South"
+    else: 
+        if coordinate >= 0:
+            direction = "East"
+        else:
+            direction = "West"  
+        
+    #we want coordinate to be positive, degrees to be integers
+    coord_abs = abs(coordinate)
+    degrees = int(coord_abs)
+    minutes = (coord_abs - degrees) * 60
+
+    return f"{degrees} degrees {minutes:.1f} minutes {direction}"
     pass
 
 def show_drone_locations():
@@ -45,7 +64,12 @@ def show_drone_locations():
     for i in range(len(places)):
         x = places[i][0]
         y = places[i][1]
+
+        lat_string = convert_to_readable_format(x, is_latitude=True)
+        lon_string = convert_to_readable_format(y, is_latitude=False)
+
         
+        """""
         # Work with latitude (x)
         if x >= 0:
             if x > 0:
@@ -88,10 +112,14 @@ def show_drone_locations():
         leftover2 = num2 - big_part2
         small_part2 = leftover2 * 60
         
+        """ 
         print(f"Drone {i+1}:")
         print(f"  GPS: ({x}, {y})")
-        print(f"  Latitude:  {big_part1} degrees {small_part1:.1f} minutes {dir1}")
-        print(f"  Longitude: {big_part2} degrees {small_part2:.1f} minutes {dir2}")
+        print(f"  Latitude:  {lat_string}")
+        print(f"  Longitude: {lon_string}")
+
+        #print(f"  Latitude:  {big_part1} degrees {small_part1:.1f} minutes {dir1}")
+        #print(f"  Longitude: {big_part2} degrees {small_part2:.1f} minutes {dir2}")
         print()
 
 def test_convert_to_readable_format():
